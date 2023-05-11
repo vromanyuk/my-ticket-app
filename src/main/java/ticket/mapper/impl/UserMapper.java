@@ -1,8 +1,9 @@
-package ticket.service.mapper;
+package ticket.mapper.impl;
 
 import java.util.stream.Collectors;
 import org.springframework.stereotype.Component;
 import ticket.dto.response.UserResponseDto;
+import ticket.mapper.ResponseDtoMapper;
 import ticket.model.Role;
 import ticket.model.User;
 

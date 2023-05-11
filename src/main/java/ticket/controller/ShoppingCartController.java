@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ticket.dto.response.ShoppingCartResponseDto;
+import ticket.mapper.ResponseDtoMapper;
 import ticket.model.MovieSession;
 import ticket.model.ShoppingCart;
 import ticket.model.User;
 import ticket.service.MovieSessionService;
 import ticket.service.ShoppingCartService;
 import ticket.service.UserService;
-import ticket.service.mapper.ResponseDtoMapper;
 
 @RestController
 @RequestMapping("/shopping-carts")

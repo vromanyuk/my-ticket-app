@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import ticket.dto.request.UserRequestDto;
 import ticket.dto.response.UserResponseDto;
+import ticket.mapper.ResponseDtoMapper;
 import ticket.model.User;
 import ticket.service.AuthenticationService;
-import ticket.service.mapper.ResponseDtoMapper;
 
 @RestController
 public class AuthenticationController {

@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ticket.dto.request.MovieSessionRequestDto;
 import ticket.dto.response.MovieSessionResponseDto;
+import ticket.mapper.RequestDtoMapper;
+import ticket.mapper.ResponseDtoMapper;
 import ticket.model.MovieSession;
 import ticket.service.MovieSessionService;
-import ticket.service.mapper.RequestDtoMapper;
-import ticket.service.mapper.ResponseDtoMapper;
 import ticket.util.DateTimePatternUtil;
 
 @RestController
