@@ -2,6 +2,7 @@ package ticket.service.impl;
 
 import java.util.Set;
 import org.springframework.stereotype.Service;
+import ticket.model.Role;
 import ticket.model.User;
 import ticket.service.AuthenticationService;
 import ticket.service.RoleService;
@@ -10,7 +11,6 @@ import ticket.service.UserService;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {
-    private static final String ROLE_USER = "USER";
     private final UserService userService;
     private final ShoppingCartService shoppingCartService;
     private final RoleService roleService;
@@ -28,7 +28,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         User user = new User();
         user.setEmail(email);
         user.setPassword(password);
-        user.setRoles(Set.of(roleService.getByName(ROLE_USER)));
+        user.setRoles(Set.of(roleService.getByName(Role.RoleName.USER.name())));
         userService.add(user);
         shoppingCartService.registerNewShoppingCart(user);
         return user;

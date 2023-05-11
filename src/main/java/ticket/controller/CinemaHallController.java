@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ticket.dto.request.CinemaHallRequestDto;
 import ticket.dto.response.CinemaHallResponseDto;
+import ticket.mapper.RequestDtoMapper;
+import ticket.mapper.ResponseDtoMapper;
 import ticket.model.CinemaHall;
 import ticket.service.CinemaHallService;
-import ticket.service.mapper.RequestDtoMapper;
-import ticket.service.mapper.ResponseDtoMapper;
 
 @RestController
 @RequestMapping("/cinema-halls")

@@ -1,8 +1,10 @@
-package ticket.service.mapper;
+package ticket.mapper.impl;
 
 import org.springframework.stereotype.Component;
 import ticket.dto.request.MovieRequestDto;
 import ticket.dto.response.MovieResponseDto;
+import ticket.mapper.RequestDtoMapper;
+import ticket.mapper.ResponseDtoMapper;
 import ticket.model.Movie;
 
 @Component

@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ticket.dto.response.UserResponseDto;
+import ticket.mapper.ResponseDtoMapper;
 import ticket.model.User;
 import ticket.service.UserService;
-import ticket.service.mapper.ResponseDtoMapper;
 
 @RestController
 @RequestMapping("/users")
